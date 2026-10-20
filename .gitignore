@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+runs/
+data/raw/
+*.pt
+*.png
+!report/figs/*.png
+solutions/**/__pycache__/

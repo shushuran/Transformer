@@ -1,0 +1,14 @@
+[project]
+name = "tlab"
+version = "0.1.0"
+description = "Transformer 陪练实验室 —— 阶段 0 基建"
+requires-python = ">=3.12"
+
+# 不打包安装：靠 PYTHONPATH=src 直接运行，避免动你的 conda env
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+markers = [
+    "todo: 阶段 0 陪练练习，等你把 src/tlab 里的 TODO 填完才会变绿",
+]
